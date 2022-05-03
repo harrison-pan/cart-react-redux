@@ -1,5 +1,5 @@
-import { CartIcon } from "./CartIcon";
 import { useSelector } from "react-redux";
+import { CartIcon } from "./CartIcon";
 
 function Navbar() {
   const { amount } = useSelector((state) => state.cart);

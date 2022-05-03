@@ -1,11 +1,11 @@
+import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
 import { ChevronUp, ChevronDown } from "./CartIcon";
 import {
   removeItem,
   increaseItem,
   decreaseItem,
 } from "../features/cart/cartSlice";
-import { useDispatch } from "react-redux";
-import PropTypes from "prop-types";
 
 function CartItem({ id, img, title, price, amount }) {
   const dispatch = useDispatch();
